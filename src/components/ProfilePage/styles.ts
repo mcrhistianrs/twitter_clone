@@ -49,6 +49,7 @@ export const ProfileData = styled.div`
         font-weight:normal;
         font-size:15px;
         color:var(--gray);
+        
     }
 
     > p{
