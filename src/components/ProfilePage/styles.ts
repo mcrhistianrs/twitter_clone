@@ -3,6 +3,9 @@ import {
     LocationOn,
     Cake
 }   from '../../styles/Icons';
+
+import Button from '../Button';
+
 export const Container = styled.div`
     display:flex;
     flex-direction:column;
@@ -61,6 +64,24 @@ export const ProfileData = styled.div`
         text-decoration:none;
         color:var(--twitter);
     }
+
+    > ul{
+        list-style:none;
+        margin-top:10px;
+        margin-bottom:10px;
+
+        > li {
+            
+
+            font-size:15px;
+            color:var(--gray);
+
+            > svg{
+                fill: var(--gray);
+                margin-right:5px;
+            }
+        }
+    }
 `;
 
 const IconCSS = css`
@@ -72,4 +93,20 @@ export const LocationIcon = styled(LocationOn)`${IconCSS}`;
 
 export const CakeIcon = styled(Cake)`${IconCSS}`;
 
-export const Followage = styled.div``;
+export const Followage = styled.div`
+    display:flex;
+
+    > span{
+        font-size:15px;
+        color:var(--gray);
+
+        & + span{
+            margin-left:20px;
+        }
+    }
+`;
+
+
+export const EditButton = styled(Button)`
+    position:relative;
+`;
