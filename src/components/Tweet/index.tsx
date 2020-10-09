@@ -1,9 +1,69 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { 
+  Container,
+  Retweeted,
+  RocketseatIcon,
+  Body,
+  Avatar,
+  Content,
+  Header,
+  Description,
+  ImageContent,
+  Icons,
+  Status,
+  CommentIcon,
+  RetweetIcon,
+  LikeIcon
+ } from './styles';
 
 const Tweet: React.FC = () => {
-  return <div />;
+  return (
+    <Container>
+      <Retweeted>
+        Você retweetou
+      </Retweeted>
+
+      <Body>
+        <Avatar />
+
+        <Content>
+          <RocketseatIcon />
+          <Header>
+            <strong>RocketSeat</strong>
+            <span>@rocketseat</span>
+            <Dot />
+            <time>27 de Junho</time>
+          </Header>
+
+          <Description>
+            Foguete nâo tem ré
+          </Description>
+
+          <ImageContent />
+
+          <Icons>
+            <Status>
+              <CommentIcon />
+              18
+            </Status>
+
+            <Status>
+              <RetweetIcon />
+              18
+            </Status>
+
+            <Status>
+              <LikeIcon />
+              18
+            </Status>
+
+          </Icons>
+        </Content>
+      </Body>
+
+    </Container>
+  );
 }
 
 export default Tweet;
