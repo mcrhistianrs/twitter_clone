@@ -8,6 +8,7 @@ import {
   Avatar,
   Content,
   Header,
+  Dot,
   Description,
   ImageContent,
   Icons,
@@ -16,6 +17,9 @@ import {
   RetweetIcon,
   LikeIcon
  } from './styles';
+
+ //AQUI 01:22:28 
+ //https://www.youtube.com/watch?v=K-8z_4xvT3o&t=80m58s
 
 const Tweet: React.FC = () => {
   return (
