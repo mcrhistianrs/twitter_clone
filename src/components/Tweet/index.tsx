@@ -18,13 +18,14 @@ import {
   LikeIcon
  } from './styles';
 
- //AQUI 01:22:28 
+ //AQUI 01:28:55 
  //https://www.youtube.com/watch?v=K-8z_4xvT3o&t=80m58s
 
 const Tweet: React.FC = () => {
   return (
     <Container>
       <Retweeted>
+        <RocketseatIcon />
         Você retweetou
       </Retweeted>
 
@@ -32,7 +33,7 @@ const Tweet: React.FC = () => {
         <Avatar />
 
         <Content>
-          <RocketseatIcon />
+          
           <Header>
             <strong>RocketSeat</strong>
             <span>@rocketseat</span>
